@@ -11,6 +11,7 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		13C1B60180874402AEA36085 /* AutourOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD3C91D807CD4F4B89106F60 /* AutourOne-Regular.ttf */; };
 		6110C0A57753E3E02252FFE1 /* libPods-newage_nails.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C84C28ABCF1137BE389CA536 /* libPods-newage_nails.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		A5159D1522F2AA7B3F2305EC /* libPods-newage_nails-newage_nailsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA809F6AA7755F596D33A4A9 /* libPods-newage_nails-newage_nailsTests.a */; };
@@ -41,6 +42,7 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = newage_nails/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A318F08A42B409C06AA90BC4 /* Pods-newage_nails-newage_nailsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newage_nails-newage_nailsTests.debug.xcconfig"; path = "Target Support Files/Pods-newage_nails-newage_nailsTests/Pods-newage_nails-newage_nailsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BA809F6AA7755F596D33A4A9 /* libPods-newage_nails-newage_nailsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-newage_nails-newage_nailsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD3C91D807CD4F4B89106F60 /* AutourOne-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "AutourOne-Regular.ttf"; path = "../assets/fonts/AutourOne-Regular.ttf"; sourceTree = "<group>"; };
 		C720A64022FE83581A3883FA /* Pods-newage_nails.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newage_nails.debug.xcconfig"; path = "Target Support Files/Pods-newage_nails/Pods-newage_nails.debug.xcconfig"; sourceTree = "<group>"; };
 		C84C28ABCF1137BE389CA536 /* libPods-newage_nails.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-newage_nails.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -106,6 +108,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8065F234C885429DBE374596 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BD3C91D807CD4F4B89106F60 /* AutourOne-Regular.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +133,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				F79C3CE839E5B1F90DB8BA63 /* Pods */,
+				8065F234C885429DBE374596 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -244,6 +256,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				13C1B60180874402AEA36085 /* AutourOne-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
