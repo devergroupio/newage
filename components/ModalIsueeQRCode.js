@@ -13,7 +13,7 @@ const ContentModal = styled.View`
   border-radius: 6px;
 `;
 const Title = styled.Text`
-  color: #f397bb;
+  color: white;
   font-size: 20px;
   text-align: center;
   text-transform: uppercase;
@@ -23,7 +23,7 @@ const Title = styled.Text`
 const TextSorry = styled.Text`
   margin-bottom: 20px;
 
-  color: #f397bb;
+  color: white;
   font-size: 25px;
   text-align: center;
   text-transform: uppercase;
@@ -37,7 +37,7 @@ const TextFix = styled.Text`
   font-family: 'AutourOne-Regular';
 `;
 const BtnBack = styled.TouchableOpacity`
-  background-color: #f397bb;
+  background-color: black;
   width: 200px;
   height: 40px;
   justify-content: center;

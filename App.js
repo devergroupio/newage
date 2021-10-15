@@ -55,7 +55,7 @@ const ScanButtonWrapper = styled.ImageBackground`
 `;
 
 const ScanBtn = styled.TouchableHighlight`
-  background: #f397bb;
+  background: black;
   border-radius: 50px;
   align-items: center;
   padding-top: 5px;

@@ -15,11 +15,11 @@ const Button = styled.TouchableOpacity`
 const Text = styled.Text`
   font-family: 'AutourOne-Regular';
   font-size: 18px;
-  color: ${(props) => (props.active ? '#f397bb' : '#ccc')};
+  color: ${(props) => (props.active ? 'black' : '#ccc')};
 `;
 const ViewButton = styled.View`
   border-bottom-width: 1px;
-  border-color: ${(props) => (props.active ? '#f397bb' : 'transparent')};
+  border-color: ${(props) => (props.active ? 'black' : 'transparent')};
 `;
 const TopNavigateScan = () => {
   const [navigate, setNavigate] = useState('Reward');

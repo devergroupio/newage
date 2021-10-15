@@ -56,7 +56,7 @@ const HistoryItemWrapper = styled.View`
   min-height: 60px;
   margin-bottom: 15px;
   border-radius: 5px;
-  box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.75);
+  // box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.75);
 `;
 const ViewTime = styled.View`
   min-width: 124px;
@@ -73,14 +73,14 @@ const TextTimeAgo = styled.Text`
 `;
 
 const TextDesc = styled.Text`
-  max-width: 342;
+  max-width: 342px;
   font-size: 16px;
   color: #666666;
   font-family: 'AutourOne-Regular';
 `;
 
 const TextPoint = styled.Text`
-  color: ${(props) => (props.status === 'plus' ? '#f397bb' : '#646D93')};
+  color: ${(props) => (props.status === 'plus' ? 'black' : '#646D93')};
   font-size: 17px;
   font-family: 'AutourOne-Regular';
 `;
@@ -88,6 +88,7 @@ const TextPoint = styled.Text`
 const History = () => {
   const apolloClient = useApolloClient();
   const { histories, setHistories, customer } = useContext(RootContext);
+  console.log(histories);
   const [loading, setLoading] = useState(false);
   const fetchDataHistory = async (id) => {
     if (id) {

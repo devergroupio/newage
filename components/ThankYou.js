@@ -22,7 +22,7 @@ const BtnDone = styled.TouchableOpacity`
   width: 231px;
   height: 42px;
   border-radius: 5px;
-  background-color: #f397bb;
+  background-color: black;
   align-items: center;
   justify-content: center;
 `;

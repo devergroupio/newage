@@ -32,7 +32,7 @@ const ListReward = ({ dataUser }) => {
           flex: 1,
           justifyContent: 'center',
         }}>
-        <ActivityIndicator size="large" color="pink" />
+        <ActivityIndicator size="large" color="black" />
       </View>
     );
   }

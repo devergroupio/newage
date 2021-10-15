@@ -19,7 +19,6 @@ export const createApolloClient = () => {
       errorWithText('Sorry, something went wrong!, please try again later');
     }
     if (networkError) {
-      console.log(CONFIG.HSR_ENDPOINT);
       errorWithText('Network error Occured! Please connect right network ');
     }
   });

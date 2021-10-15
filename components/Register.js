@@ -1,5 +1,10 @@
 import React, { useState, useContext } from 'react';
-import { StyleSheet, KeyboardAvoidingView } from 'react-native';
+import {
+  StyleSheet,
+  KeyboardAvoidingView,
+  Keyboard,
+  TouchableWithoutFeedback,
+} from 'react-native';
 import { useApolloClient } from '@apollo/react-hooks';
 import styled from '@emotion/native';
 import Modal from 'react-native-modal';
@@ -30,7 +35,7 @@ const Header = styled.ImageBackground`
 const Text = styled.Text`
   font-size: 52px;
   font-family: 'AutourOne-Regular';
-  color: #f397bb;
+  color: black;
   align-items: center;
 `;
 const InputForm = styled.TextInput`
@@ -38,14 +43,14 @@ const InputForm = styled.TextInput`
   border: 1px solid #3366ff;
   border-radius: 2px;
   padding-left: 10px;
-  color: #f397bb;
+  color: black;
   font-size: 20px;
   font-family: 'AutourOne-Regular';
 `;
 const Label = styled.Text`
   font-family: 'AutourOne-Regular';
   font-size: 18px;
-  color: #f397bb;
+  color: black;
   margin: 5px 0px;
 `;
 const FormView = styled.View`
@@ -59,7 +64,7 @@ const FormControl = styled.View`
 `;
 const ButtonSubmit = styled.TouchableOpacity`
   margin: 30px 0 0 40px;
-  background-color: #f397bb;
+  background-color: black;
   width: 228px;
   height: 50px;
   border-radius: 20px;
@@ -166,9 +171,18 @@ const Register = ({
         animationIn="fadeIn"
         animationInTiming={0.3}>
         <RegisterWrapper>
-          <Header source={require('../assets/images/header_register.png')}>
-            <Text>Registration</Text>
-          </Header>
+          <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+            <Header source={require('../assets/images/header_register.png')}>
+              <Text
+                // eslint-disable-next-line react-native/no-inline-styles
+                style={{
+                  color: 'white',
+                }}>
+                Registration
+              </Text>
+            </Header>
+          </TouchableWithoutFeedback>
+
           <FormView>
             <FormControl>
               <Label>First Name</Label>

@@ -6,10 +6,10 @@ const Reward = styled.View`
 `;
 const ItemWrapper = styled.TouchableOpacity`
   margin-bottom: 15px;
-  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.75);
+  // box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.75);
   border: 2px solid #f9f9f9;
   border-radius: 5px;
-  background-color: ${(props) => (props.active ? '#f397bb' : '#f9f9f9')};
+  background-color: ${(props) => (props.active ? 'pink' : '#f9f9f9')};
 `;
 
 const RewardWrapper = styled.View`
@@ -24,10 +24,11 @@ const TextCircle = styled.Text`
   height: 40px;
   border-radius: 20px;
 
-  background-color: ${(props) => (props.active ? '#3D4878' : '#f397bb')};
+  background-color: ${(props) =>
+    props.active ? 'transparent' : 'transparent'};
   font-family: 'AutourOne-Regular';
   border-radius: 20px;
-  color: white;
+  color: black;
   text-align: center;
   padding-top: 12.5px;
 `;
@@ -37,7 +38,7 @@ const TextDescWrapper = styled.Text`
   margin-left: 20px;
 `;
 const TextDesc = styled.Text`
-  color: ${(props) => (props.active ? '#fff' : '#f397bb')};
+  color: ${(props) => (props.active ? '#fff' : 'black')};
 `;
 const ItemReward = ({ dataUser, reward, onSelectReward, openModal }) => {
   const { description, cost } = reward;

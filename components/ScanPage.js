@@ -49,7 +49,7 @@ const TextScanCode = styled.Text`
   font-size: 20px;
   font-family: 'AutourOne-Regular';
   text-align: center;
-  color: #f397bb;
+  color: black;
 `;
 
 const ScanPage = ({ navigation }) => {
@@ -66,7 +66,7 @@ const ScanPage = ({ navigation }) => {
   const getDataUser = async (data) => {
     const { store_id, customer_id } = data;
 
-    if (store_id === 'ellenail') {
+    if (store_id === 'newage') {
       // eslint-disable-next-line no-shadow
       const { data, errors } = await apolloClient.query({
         query: FETCH_USER_BY_ID,
@@ -316,7 +316,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
   },
   tabIndicator: {
-    backgroundColor: '#F397BB',
+    backgroundColor: 'black',
   },
   tabBar: {
     alignSelf: 'flex-end',
@@ -354,7 +354,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: '#F397BB',
+    backgroundColor: 'black',
     fontFamily: 'AutourOne-Regular',
     color: '#fff',
     textAlign: 'center',
@@ -415,7 +415,7 @@ const styles = StyleSheet.create({
     fontFamily: 'AutourOne-Regular',
   },
   btnLogout: {
-    backgroundColor: '#F397BB',
+    backgroundColor: 'black',
     borderRadius: 100,
     width: 168,
     height: 38,

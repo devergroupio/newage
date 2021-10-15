@@ -31,11 +31,11 @@ const WrapperPoint = styled.ImageBackground`
 const TextPoint = styled.Text`
   font-size: 48px;
   font-family: 'AutourOne-Regular';
-  color: #f397bb;
+  color: black;
   top: 60px;
 `;
 const BtnHome = styled.TouchableOpacity`
-  background-color: #f397bb;
+  background-color: black;
   width: 231px;
   height: 42px;
   border-radius: 5px;
